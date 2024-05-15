@@ -176,7 +176,7 @@ body {
   height: 100%;
   width: 100vw;
   background-color: var(--secondary-color);
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.52), #4D4D29),url(/assets/srmap11.jpg);
+  background-image: url('https://res.cloudinary.com/do5e8qwxk/image/upload/v1713575259/srmap11_kaba86.jpg');
   background-size: 50%;
   background-repeat: no-repeat;
   border-top-left-radius: 2rem;
