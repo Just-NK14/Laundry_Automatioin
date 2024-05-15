@@ -5,7 +5,7 @@ Certainly, here's the Installation section structured similarly to the example y
 ## Installation
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   [git clone https://github.com/your-username/your-repository.git](https://github.com/Just-NK14/Laundry_Automatioin.git)
    ```
 
 2. **Install XAMPP:**
