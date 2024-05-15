@@ -1,34 +1,39 @@
 # Laundry Automation System
 
+Certainly, here's the Installation section structured similarly to the example you provided:
+
 ## Installation
-To set up the Laundry Automation System, follow these steps:
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+   ```
 
-1. **Install XAMPP:** Download and install XAMPP, which includes Apache, MySQL, and PHP. You can download it from [here](https://www.apachefriends.org/index.html).
+2. **Install XAMPP:**
+   - Download and install XAMPP from [https://www.apachefriends.org/index.html](https://www.apachefriends.org/index.html).
 
-2. **Start Apache and MySQL:** Start the Apache and MySQL services from the XAMPP control panel.
+3. **Start the XAMPP Server:**
+   - Launch the XAMPP control panel and start the Apache and MySQL services.
 
-3. **Database Setup:**
-   - Open your web browser and go to `http://localhost/phpmyadmin`.
-   - Log in using the default username `root` and leave the password field blank.
-   - Click on the "SQL" tab and run the SQL file provided in the repository to create the necessary database tables.
+4. **Open phpMyAdmin:**
+   - Open your web browser and go to [http://localhost/phpmyadmin](http://localhost/phpmyadmin).
+   - Create a new database named `your_database_name`.
+   - Import the SQL file provided in the repository into the `your_database_name` database.
 
-4. **Code Configuration:**
-   - Clone the repository to your local machine.
-   - Navigate to the directory where the project is cloned.
-   - Open the `config.php` file and update the following:
-     - `$serverName`: Set the server name to `localhost` or the appropriate server name if different.
-     - `$userName`: Set the username for the MySQL database.
-     - `$password`: Set the password for the MySQL database.
-     - `$dbName`: Set the name of the database created in step 3.
+5. **Update Localhost Configuration (if necessary):**
+   - If your localhost setup uses a different username, password, or port, make sure to update the database connection configuration in the PHP files accordingly.
+   - The default database connection settings in the PHP files are:
+     ```php
+     $servername = "localhost:3307";
+     $username = "root";
+     $password = "";
+     $database = "laundry";
+     ```
 
-5. **Access the Application:** Open your web browser and navigate to the directory where the project is cloned. You can access the application by typing `http://localhost/<project_folder_name>` in the address bar.
+6. **Move the Project Files:**
+   - Move the cloned repository folder to the `htdocs` directory inside your XAMPP installation directory (e.g., `C:\xampp\htdocs`).
 
-This setup will allow you to run the Laundry Automation System on your local machine for testing and development purposes.
-
-## Team Members
-- **Navaneeth Krishna**
-- **BJ Gridhar**
-- **Rajveer Singh Khanduja**
+7. **Access the Project:**
+   - Open your web browser and go to `http://localhost/your-repository-folder-name` to access the project.
 
 ## Introduction
 Waiting for washed laundry and searching among numerous bags is a common issue faced by college students residing in dormitories. Laundry facilities in college dormitories often serve a large population of students, leading to congestion, long wait times, and difficulties in locating one's clean laundry among the multitude of bags. This results in frustration, inconvenience, and wasted time for students who rely on these facilities to manage their laundry needs.
